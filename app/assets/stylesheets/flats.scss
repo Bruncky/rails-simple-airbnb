@@ -1,3 +1,21 @@
 // Place all the styles related to the Flats controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  padding: 30px;
+  background-color: #2D3D4E;
+  color: white;
+  font-family: "Lato";
+  text-align: left;
+  width: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
