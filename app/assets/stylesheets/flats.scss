@@ -5,17 +5,23 @@ body {
   padding: 30px;
   background-color: #2D3D4E;
   color: white;
-  font-family: "Lato";
-  text-align: left;
+  font-family: 'Roboto', sans-serif;
   width: 100%;
 }
 
 a {
-  color: white;
+  color: black;
   text-decoration: none;
 
   &:hover {
-    color: white;
+    color: black;
     text-decoration: none;
   }
 }
+
+.card {
+  margin: 15px auto;
+  color: black;
+  border-radius: 5px;
+}
+
