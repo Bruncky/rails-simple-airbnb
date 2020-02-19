@@ -3,14 +3,16 @@
         <% @flats.each do |flat| %>
             <div class="col-4">
                 <div class="card" style="width: 18rem;">
-                    <h5 class="card-title"><%= flat.name %></h5>
-                    <h6 class="card-subtitle mb-2 text-muted"><%= flat.address %></h6>
-                    <div class="flex">
-                        <span class="number-of-guests"><%= flat.number_of_guests %></span>
-                        <span class="price-per-night"><%= flat.price_per_night %></span>
+                    <div class="card-body">
+                        <h5 class="card-title"><%= flat.name %></h5>
+                        <h6 class="card-subtitle mb-2 text-muted"><%= flat.address %></h6>
+                        <div class="flex">
+                            <span class="number-of-guests"><i class="fas fa-users"></i><%= flat.number_of_guests %></span>
+                            <span class="price-per-night"><i class="fas fa-dollar-sign"></i><%= flat.price_per_night %></span>
+                        </div>
                     </div>
-                    <div class="more-info">
-                        <%= link_to "More info", flat_path(flat), class: "card-link" %>
+                    <div class="card-footer">
+                        <%= link_to "More info", flat_path(flat), class: "btn btn-info" %>
                     </div>
                 </div>
             </div>
